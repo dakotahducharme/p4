@@ -3,6 +3,16 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.1'
 
+
+# react stuff
+gem 'react-rails'
+gem 'webpacker'
+
+gem 'thor'
+gem 'foreman'
+gem 'parcel-rails'
+
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
 # Use postgresql as the database for Active Record
