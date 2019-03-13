@@ -38,3 +38,6 @@ https://trello.com/b/5WLVHG2A/p4
 - Different options for user's needs added
 - "Excercises" and calming rituals added
 - Styling
+
+## Running the application
+- run the rake task at `lib/taks/start.rake` with the command `rails start`
