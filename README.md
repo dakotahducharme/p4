@@ -5,10 +5,10 @@ https://trello.com/b/5WLVHG2A/p4
 
 
 ## Wireframes:
-![sign in](wireframes/Project_6.png)
-![2](wireframes/Project_2.png)
-![3](wireframes/Project_4.png)
-![1](wireframes/Project.png)
+![sign in](client/wireframes/Project_6.png)
+![2](client/wireframes/Project_2.png)
+![3](client/wireframes/Project_4.png)
+![1](client/wireframes/Project.png)
 
 
 
@@ -38,4 +38,3 @@ https://trello.com/b/5WLVHG2A/p4
 - Different options for user's needs added
 - "Excercises" and calming rituals added
 - Styling
-
