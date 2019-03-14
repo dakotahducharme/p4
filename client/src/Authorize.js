@@ -5,7 +5,7 @@ import axios from 'axios'
 const Authorization = styled.div`
   display: flex;
   justify-content: center;
-  background-color: #FFFFFF90;
+  background-color: #FFFFFF99;
   height: 275px;
   width: 300px;
   padding: 20px 0 40px 0;
