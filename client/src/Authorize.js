@@ -56,7 +56,7 @@ class Authorize extends Component {
     const { login, signup } = this.props;
     const { username, password } = this.state;
     return(
-      <div id="container">
+      <div class="container">
         <Authorization>
           <form onSubmit={this.submit}>
             <h2>{login ?  "Sign In" : "Sign Up"}</h2>

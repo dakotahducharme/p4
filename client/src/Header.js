@@ -36,7 +36,7 @@ const Header = (props) => {
         <ul>
           <h1>bloom</h1>
           <li><a href="#">home</a></li>
-          <li><a href="#">github</a></li>
+          <li><a href="https://github.com/dakotahducharme">github</a></li>
           {currentUser ? <li>Welcome, {currentUser.username}!</li> : <Dropdown {...props}/>}
         </ul>
       </nav>
