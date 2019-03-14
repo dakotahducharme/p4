@@ -18,14 +18,10 @@ const AppContainer = styled.div`
 
 class App extends Component {
   render() {
-    this.state = {
-      value: '',
-    }
     return (
       <AppContainer>
         <Header />
-        // signedin ? help  :  signin
-        <Help onClick={this.state.value}/>
+        <Help />
         <Footer />
       </AppContainer>
     );
