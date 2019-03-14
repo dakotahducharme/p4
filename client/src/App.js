@@ -4,6 +4,7 @@ import './App.css';
 import Header from './Header.js';
 import Footer from './Footer.js';
 import Authorize from './Authorize.js';
+import Help from './Help.js';
 import styled from 'styled-components'
 
 const AppContainer = styled.div`
@@ -17,10 +18,14 @@ const AppContainer = styled.div`
 
 class App extends Component {
   render() {
+    this.state = {
+      value: '',
+    }
     return (
       <AppContainer>
         <Header />
-        <Authorize class="signin"/>
+        // signedin ? help  :  signin
+        <Help onClick={this.state.value}/>
         <Footer />
       </AppContainer>
     );
