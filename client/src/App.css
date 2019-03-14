@@ -45,12 +45,12 @@ button:active {
 }
 
 .answers {
-  display: flex;
+  display: flex-block;
+  font-size: 14px;
   justify-content: center;
-  background-color: #FFFFFF90;
-  height: 275px;
-  width: 300px;
-  padding: 20px 0 40px 0;
+  background-color: #FFFFFF99;
+  margin: 0 20px;
+  padding: 20px 20px 40px 20px;
   border-radius: 20px;
   text-align: left;
 }
