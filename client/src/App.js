@@ -17,11 +17,42 @@ const AppContainer = styled.div`
 `
 
 class App extends Component {
+  state = {
+    currentPage: 'Help',
+    currentUser: null
+  };
+
+  navigate = (page) => {
+    this.setState({currentPage: page});
+  };
+
+  setUser = (user) =>  {
+    this.setState({currentUser: user});
+  }
+
+  renderContent = () => {
+    const { currentPage } = this.state;
+    switch (currentPage) {
+      case 'login':
+        return (
+          <Authorize navigate={this.navigate} login={true} setUser={this.setUser} />
+        );
+      case 'signup':
+        return (
+          <Authorize navigate={this.navigate} signup={true} setUser={this.setUser} />
+        );
+      default:
+        return(
+          <Help />
+        );
+    }
+  }
+
   render() {
     return (
       <AppContainer>
-        <Header />
-        <Help />
+        <Header navigate={this.navigate} currentUser={this.state.currentUser} />
+        {this.renderContent()}
         <Footer />
       </AppContainer>
     );

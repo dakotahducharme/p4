@@ -30,14 +30,15 @@ showDropdownMenu(event) {
   }
 
   render() {
+    const { navigate } = this.props;
     return (
         <div  className="dropdown" style = {{width:"200px"}} >
          <div className="button" onClick={this.showDropdownMenu}> Account </div>
 
           { this.state.displayMenu ? (
             <ul>
-              <li><a href="#">sign in</a></li>
-              <li><a href="#">sign up</a></li>
+              <li onClick={() => navigate('login')}><a href="#">sign in</a></li>
+              <li onClick={() => navigate('signup')}><a href="#">sign up</a></li>
             </ul>
         ):
         (

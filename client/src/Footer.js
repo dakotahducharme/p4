@@ -16,11 +16,6 @@ const StyledFooter = styled.footer`
 `
 
 class Footer extends Component {
-  componentDidMount() {
-    axios.get('/api/say_something').then(response => {
-      console.log(response.data);
-    });
-  }
   render() {
     return (
       <div>

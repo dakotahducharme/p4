@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
+import axios from 'axios'
 
 const Authorization = styled.div`
   display: flex;
@@ -26,14 +27,41 @@ const Authorization = styled.div`
 `
 
 class Authorize extends Component {
+  state = {
+    username: '',
+    password: ''
+  }
+  submit = (e) => {
+    e.preventDefault();
+    const { login, signup, setUser, navigate } = this.props;
+    const { username, password } = this.state;
+    if (login) {
+      axios.post('/api/login', {
+        user: {username, password},
+      }).then(res => {
+        setUser(res.data);
+        navigate('help');
+      }).catch(err => console.log(err))
+    } else if (signup) {
+      axios.post('/api/users', {
+        user: {username, password},
+      }).then(res => {
+        setUser(res.data);
+        navigate('help');
+      }).catch(err => console.log(err))
+    }
+  }
+
   render() {
+    const { login, signup } = this.props;
+    const { username, password } = this.state;
     return(
       <div id="container">
         <Authorization>
-          <form>
-            <h2>Sign In</h2>
-            <input type="text" placeholder=" username"></input><br/>
-            <input type="password" placeholder=" password"></input><br/>
+          <form onSubmit={this.submit}>
+            <h2>{login ?  "Sign In" : "Sign Up"}</h2>
+            <input type="text" placeholder=" username" value={username} onChange={ (e) => this.setState({username: e.target.value})}></input><br/>
+            <input type="password" placeholder=" password" value={password} onChange={ (e) => this.setState({password: e.target.value})}></input><br/>
             <button type="submit">submit</button>
           </form>
       </Authorization>

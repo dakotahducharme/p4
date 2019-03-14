@@ -28,7 +28,8 @@ const Heading = styled.header`
   }
 `
 
-const Header = () => {
+const Header = (props) => {
+  const { currentUser } = props;
   return (
     <Heading>
       <nav>
@@ -36,7 +37,7 @@ const Header = () => {
           <h1>bloom</h1>
           <li><a href="#">home</a></li>
           <li><a href="#">github</a></li>
-          <Dropdown />
+          {currentUser ? <li>Welcome, {currentUser.username}!</li> : <Dropdown {...props}/>}
         </ul>
       </nav>
     </Heading>

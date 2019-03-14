@@ -2,7 +2,8 @@ Rails.application.routes.draw do
 
   namespace :api do
     get 'welcome/index'
-    get '/say_something', to: 'welcome#say_something'
+    resources :users
+    post '/login', to: 'users#login'
   end
 
   root 'welcome#index'
