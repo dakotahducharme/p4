@@ -12,6 +12,7 @@ import QuestionData, {
   STRETCH,
   ART,
   END,
+  WALK,
 } from './QuestionData'
 
 class Help extends Component {
@@ -46,8 +47,8 @@ class Help extends Component {
           <Question 
             onClick={this.handleClick}
             options={[
-              QuestionData[SOMETHING_ELSE],
-              QuestionData[ART]
+              QuestionData[MEDICATION],
+              QuestionData[WALK]
             ]}
             {...QuestionData[DEPRESSION]} 
           />
@@ -57,7 +58,8 @@ class Help extends Component {
           <Question 
             onClick={this.handleClick}
             options={[
-              QuestionData[SOMETHING_ELSE],
+              QuestionData[ART],
+              QuestionData[END],
             ]}
             {...QuestionData[LONELY]} 
           />
@@ -68,6 +70,7 @@ class Help extends Component {
             onClick={this.handleClick}
             options={[
               QuestionData[MEDICATION],
+              QuestionData[WALK],
             ]}
             {...QuestionData[SOMETHING_ELSE]} 
           />
@@ -89,7 +92,7 @@ class Help extends Component {
             onClick={this.handleClick}
             options={[
               QuestionData[END],
-              QuestionData[STRETCH],
+              QuestionData[ART],
             ]}
             {...QuestionData[TOMORROW]} 
           />
@@ -100,7 +103,7 @@ class Help extends Component {
             onClick={this.handleClick}
             options={[
               QuestionData[END],
-              QuestionData[ART],
+              QuestionData[TOMORROW],
             ]}
             {...QuestionData[STRETCH]} 
           />
@@ -111,7 +114,18 @@ class Help extends Component {
             onClick={this.handleClick}
             options={[
               QuestionData[END],
-              QuestionData[ANXIETY],
+              QuestionData[STRETCH],
+            ]}
+            {...QuestionData[ART]} 
+          />
+        );
+      case WALK:
+        return (
+          <Question 
+            onClick={this.handleClick}
+            options={[
+              QuestionData[END],
+              QuestionData[ART],
             ]}
             {...QuestionData[ART]} 
           />

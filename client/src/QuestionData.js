@@ -7,6 +7,7 @@ export const MEDICATION = "medication";
 export const TOMORROW = "tomorrow";
 export const STRETCH = "stretch";
 export const ART = "art";
+export const WALK = "walk";
 export const END = "end";
 
 const QuestionData = {
@@ -27,8 +28,9 @@ const QuestionData = {
   },
   lonely: {
     id: LONELY,
-    title: "do this",
-    prompt: "just need a friend"
+    title: "It's only human to crave intimacy and connection with others. Sometimes, when we need it most, it can be difficult to find",
+    body: "Solitary animals are animals that spend most of their life interacting with others of the species, and honestly, most of them are badass. Let's pretend for a moment that we're the most badass of all the solitary animals (obviously bears). Growl out loud. No, I'm serious, do it. It helps.",
+    prompt: "feeling alone"
   },
   somethingElse: {
     id: SOMETHING_ELSE,
@@ -37,8 +39,8 @@ const QuestionData = {
   },
   medication: {
     id: MEDICATION,
-    title: "Hey, that's totally okay. Getting better can be really rough, and there's bad days sometimes, but you're trying your best, and that's what's important. Tomorrow is another day, and you can wake up and take it tomorrow",
-    prompt: "yes, but I still feel down",
+    title: "Getting better can be really rough, and there's bad days sometimes, but you're trying your best, and that's what's important. Tomorrow is another day, and you can wake up and take it tomorrow",
+    prompt: "yes",
   },
   tomorrow: {
     id: TOMORROW,
@@ -57,6 +59,12 @@ const QuestionData = {
     title: "Sometimes visualizing or drawing something you love can make all the difference. Even if you're not artistic, drawing something that usually makes you smile can ease your mind and give you something else to focus on",
     body: "take a few minutes for yourself and draw your favorite thing in the world. It can be a cat, a person, some cute socks, or even yourself! It doesn't have to be perfect, just do your best.",
     prompt: "let's do something else",
+  },
+  walk: {
+    id: WALK,
+    title: "Often we forget to appreciate the little things, like being fortunate enough to go for a walk outside.",
+    body: "If you can, walk outside. Look at the stars. Watch the clouds roll by. Listen to the sounds around you. Clear your mind, and focus on the outside world.",
+    prompt: "no"
   },
   end: {
     id: END,

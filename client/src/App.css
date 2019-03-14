@@ -43,3 +43,14 @@ button:active {
 	outline:none;
 	outline: 0;
 }
+
+.answers {
+  display: flex;
+  justify-content: center;
+  background-color: #FFFFFF90;
+  height: 275px;
+  width: 300px;
+  padding: 20px 0 40px 0;
+  border-radius: 20px;
+  text-align: left;
+}

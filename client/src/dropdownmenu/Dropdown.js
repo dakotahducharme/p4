@@ -32,7 +32,7 @@ showDropdownMenu(event) {
   render() {
     return (
         <div  className="dropdown" style = {{width:"200px"}} >
-         <div className="button" onClick={this.showDropdownMenu}> My Setting </div>
+         <div className="button" onClick={this.showDropdownMenu}> Account </div>
 
           { this.state.displayMenu ? (
             <ul>
