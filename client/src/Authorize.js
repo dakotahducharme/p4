@@ -5,7 +5,7 @@ import axios from 'axios'
 const Authorization = styled.div`
   display: flex;
   justify-content: center;
-  background-color: #FFFFFF99;
+  background-color: rgba(255, 255, 255, 0.9);
   height: 275px;
   width: 300px;
   padding: 20px 0 40px 0;
@@ -22,7 +22,7 @@ const Authorization = styled.div`
     font-weight: 500;
   }
   button:hover, input:hover {
-    background-color: #FFFFFF90;
+    background-color: #dfe9ec;
   }
 `
 

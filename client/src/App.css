@@ -32,7 +32,7 @@ input, button  {
   font-weight: 500;
 }
 button:hover, input:hover {
-  background-color: #FFFFFF90;
+  background-color: #dfe9ec;
 }
 
 li {
@@ -48,7 +48,7 @@ button:active {
   display: flex-block;
   font-size: 14px;
   justify-content: center;
-  background-color: #FFFFFF99;
+  background-color: rgba(255, 255, 255, 0.9);
   margin: 0 20px;
   padding: 20px 20px 40px 20px;
   border-radius: 20px;
